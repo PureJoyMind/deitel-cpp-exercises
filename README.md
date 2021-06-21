@@ -5,4 +5,6 @@ After I finishh each chapter I start doing the exercises, so there will be time 
 This repo is for people who have problems doing the exercises. 
 By doing this I try to learn good commenting and writing clean code.
 Hope it is usefull to you!
+
+
 -Mazdak
