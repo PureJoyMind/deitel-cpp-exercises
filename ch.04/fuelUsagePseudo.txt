@@ -1,0 +1,14 @@
+Pseudocode for ch.04 exercise 4.13
+
+Receive kilometers and petrol used and give back km/liter
+and total km/litter
+
+First Refinement:
+    initialze data
+    receive data from user
+    calculate the km/liter
+    add each to total
+    start again
+
+Second Refinement:
+    
