@@ -11,4 +11,23 @@ First Refinement:
     start again
 
 Second Refinement:
-    
+    initialize kilometer(sentinel variable)
+    initialize liter
+    initialize totalKilo
+    initialize totalLiter
+
+    while the kilometer is not -1:
+        prompt the user
+        notify the user for sentinel
+        receive kilometer
+        recieve liter
+
+        add both to the total values
+
+        initialize kmPerLiter
+        calculate km per liter
+
+        initialize totalKmPerLiter
+        claculate the total km per liter
+
+        show output
