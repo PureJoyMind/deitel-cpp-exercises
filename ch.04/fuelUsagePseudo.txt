@@ -16,9 +16,10 @@ Second Refinement:
     initialize totalKilo
     initialize totalLiter
 
+    prompt the user
+    notify the user for sentinel
+
     while the kilometer is not -1:
-        prompt the user
-        notify the user for sentinel
         receive kilometer
         recieve liter
 
@@ -30,4 +31,34 @@ Second Refinement:
         initialize totalKmPerLiter
         claculate the total km per liter
 
+        prompt the user
+        notify the user for sentinel
+
         show output
+
+Third Refinement:
+    initialize the following variables as type int:
+        kilometer(sentinel, exit entry -1)
+        liter
+    and the following as unsigned int:    
+        totalKilo
+        totalLiter
+    
+    get kilometer
+    notify the user of sentinel
+
+    while kilometer is not -1:
+        get liter
+
+        add kilometer to totalKilo
+        add liter to totalLiter
+
+        initialize kmPerLiter as type double
+        calculate kmPerLiter
+
+        initialize totalKmPerLiter as type double
+        claculate the total km per liter
+
+        get kilometer
+        notify the user of sentinel
+    
