@@ -1,0 +1,40 @@
+Pseudocode for ch.04 exercise 4.14
+
+determining whether a custumer has exeeded
+the credit limit on a charge account.
+
+First Refinement:
+    declare variables.
+
+    while the input is not sentinel value:
+        input each variable
+        if the limit was exeeded:
+            display all input valuse and notify of the limmit
+        else:
+            print the new balance
+
+Second Refinement:
+    declare accNum (sentinel)
+    declare initBalance
+    declare totalCharge
+    declare totalCredit
+    declare creditLimit
+    declare newBalance
+
+    prompt user for account number
+    input account number
+
+    set floating point precision
+    
+    while sentinetl is not input:
+        input each variable besides accNum
+        
+        calculate newBalance
+        print newBalance
+
+        if newBalance was bigger than creditLimit:
+            print (accNum, creditLimit, newBalance, "credit limit exeeded")
+
+        prompt user for account number
+        input account number
+
