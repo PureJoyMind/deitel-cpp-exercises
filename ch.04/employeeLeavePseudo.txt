@@ -1,0 +1,39 @@
+Pseudocode for ch.04 exercise 4.15
+
+Calculating the hours of leave accrued by the employer
+
+First Refinement:
+    declare variables
+
+    get sentinel value 
+
+    while the sentinel is not input:
+        calculate 10% of hours worked
+
+        add to the base 2 hour leave 
+
+        print the accrued leave
+
+        reset leave hours for next employee
+
+        get sentinel value
+
+Second Refinement:
+    declare hours(sentinel)
+    declare leaveHours initialized to 2
+
+    prompt user to enter hours worked (remind of sentinel value)
+    get the hours
+
+    set floating point precision
+
+    while sentinel is not input:
+        leaveHours is added by the 10%
+
+        print leaveHours
+
+        set the leaveHours back to 2 for next employee
+        
+        prompt user to enter hours worked (remind of sentinel value)
+        get the hours
+

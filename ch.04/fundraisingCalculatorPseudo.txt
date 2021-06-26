@@ -1,0 +1,68 @@
+Pseudocode for ch.04 exercise 4.16
+
+calculating a students contribution towards the fundraising initiative
+
+First Refinement:
+    declare variables(laps, contribution, sponsorAmount, totalContribution)
+    declare counter
+
+    get the amount of laps for a student
+
+    set floating point precision
+
+    while input is not sentinel value:  (each student)
+        get the rest of the info
+
+        calculate bonusSponsorAmount
+
+        while counter is less than or equal to the number of the laps:  (each lap)
+            if counter is bigger than 40:
+                contribution is added by bonusSponsorAmount
+            else:
+                contribution is added by sponsorAmount
+
+            add 1 to counter
+            
+        totalContribution is added by contribution
+
+        print student contribution
+
+        reset contribution and counter for the next student
+
+        get the amount of laps for a student
+
+    print totalContribution
+
+Second Refinement:
+    declare laps as type int
+    declare contribution, sponsorAmount,totalContribution, bonusSponsorAmount as type float
+    declare counter as type int and initialize to 1
+    
+    set floating point precision
+
+    prompt user for the amount of laps and remind of sentinel
+    get the amount of laps 
+
+    while laps is not equal to sentinel:  (for each student)
+        promt user for the sponsor amount
+        get the sponsorAmount
+
+        calculate bonusSponsorAmount
+
+        while counter is less than or equal to laps:  (for each lap)
+            if counter is bigger than 40:
+                contribution is added by bonusSponsorAmount
+            else:
+                contribution is added by sponsorAmount
+            add 1 to counter
+
+        totalContribution is added contribution
+        
+        print student contribution
+
+        set contribution to 0 and counter to 1
+
+        prompt user for the amount of laps and remind of sentinel
+        get the amount of laps 
+
+    print totalContribution
