@@ -33,7 +33,7 @@ int main(){
     // declaring fraction for the fractional parts
     double frct{1};
 
-    // using while to calculate e
+// using while to calculate e
     while ( sum > 0){
     // calculating the  factorial
         // counter for the while loop
@@ -42,7 +42,7 @@ int main(){
         // declaring the final answer
         double ans{frct};
 
-        // using a counter controlled while loop to calculate the factorial
+    // using a counter controlled while loop to calculate the factorial
         while(counter < frct){
             ans *= frct - counter;
             counter++;
