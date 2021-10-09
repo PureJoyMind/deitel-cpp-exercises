@@ -12,11 +12,11 @@ int main(){
     cout << "enter the number of integers: \n";
     cin >> num;
 
-    for(int i{1}; i <= num; i++){
+    for(int i{1}; i <= num; i++){// for loop iteraing as much as the entered num
         cout << "Enter integer: "<< endl;
         cin >> numInput;
 
-        if(numInput < smallest){
+        if(numInput < smallest){// checking if the entered integer is smaller
             smallest = numInput;
         }
     }
