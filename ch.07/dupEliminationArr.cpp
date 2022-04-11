@@ -3,41 +3,58 @@
 
 #include <iostream>
 #include <array>
-#include <algorithm>// binary_search() and sort() functions
+#include <algorithm> // binary_search() and sort() functions
 
 using namespace std;
 
-int main(){
-	const size_t arrSize{20}; 
-	array<int, arrSize> numbers{};
-	
-	cout << " Input 20 numbers between 10 and 100: \n";
-	
-	int tmp{0}; // tmp value to validate before adding to array
+const size_t arrSize{20};// Array size
 
-	for(int i{0}; i < arrSize; i++){
+bool search( array<int, arrSize>& , int );
+
+int main()
+{
+	array<int, arrSize> num{};
+	int tmp{0};// To get user input and if validated add to array
+
+	cout << "Enter 20 numbers between 10 & 100:\n";
+
+	bool srch{false};// Variable to hold search answer
+
+	for (int i{0}; i < arrSize; i++)// Looping the array
+	{
 		cin >> tmp;
-		while( tmp < 10 || tmp > 100 ){
-			cout << " Out of bounds! Try again: \n";
+		while (tmp > 100 || tmp < 10)// Bounds checking
+		{
+			cout << "Out of bounds: \n";
 			cin >> tmp;
 		}
-		sort(numbers.begin(), numbers.end()); // Sorting before searching
-		if( binary_search( numbers.begin(), numbers.end(), tmp) ){
-			cout << " duplicate!\n"; 
-			continue;
+
+		srch = search(num, tmp);// Searching user input in array, true if found
+		if (srch)
+		{
+			cout << "duplicate\n";
+			continue;// If duplicate was found jump to next index
 		}
-		numbers[i] = tmp;
+
+		num[i] = tmp;// If no duplicate existed add to array
+
 	}
 
-	cout << " The entered numbers are: \n";
-	for(int& i : numbers){
-		if ( i == 0)
-			continue;
-		cout << i << ' ';
+	sort ( num.begin(), num.end() );
+
+	cout << "The entered numbers are:\n";
+	for (int i{0}; i < arrSize; i++)
+	{
+		if( num[i] != 0)
+			cout << num[i] << ' ';
 	}
 	cout << endl;
 }
 
-void validation(array<int, arrSize>& n, int i){
-	
+bool search(array<int, arrSize>& n, int a){
+	for(int i : n){
+		if ( i == a )
+			return true;
+	}
+	return false;
 }
